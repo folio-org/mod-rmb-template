@@ -47,6 +47,12 @@
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
+            <artifactId>vertx-unit</artifactId>
+            <version>3.5.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
             <artifactId>vertx-mysql-postgresql-client</artifactId>
             <version>3.3.2</version>
         </dependency>
@@ -303,18 +309,6 @@
                 <artifactId>properties-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <executions>
-                    <execution>
-                        <id>initialize-properties</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>read-project-properties</goal>
-                        </goals>
-                        <configuration>
-                            <files>
-                                <file>src/main/resources/db.properties</file>
-                            </files>
-                        </configuration>
-                    </execution>
                     <execution>
                         <id>set-system-properties</id>
                         <goals>
