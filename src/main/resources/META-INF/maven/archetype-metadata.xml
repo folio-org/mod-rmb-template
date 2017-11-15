@@ -25,5 +25,14 @@
         <fileSet filtered="true">
             <directory>src/test/resources</directory>
         </fileSet>
+        <fileSet filtered="true">
+            <directory></directory>
+            <includes>
+                <include>.*</include>
+                <include>LICENSE</include>
+                <include>*.md</include>
+            </includes>
+        </fileSet>
     </fileSets>
+
 </archetype-descriptor>
