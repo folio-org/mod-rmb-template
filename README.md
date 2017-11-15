@@ -6,36 +6,38 @@ This software is distributed under the terms of the Apache License, Version 2.0.
 
 ## Introduction
 
-This module is responsible for the persistence of People data.
-
-This is an RMB-based module.
+This is the Maven archetype for an RMB-based-backend module for FOLIO.
 
 
-For additional information please refer to the [WIKI](https://wiki.folio.org).
+For additional information on RMB, please refer to the [RAML Module Builder README](https://github.com/folio-org/raml-module-builder).
 
 
-For API documentation, run this project locally and then go to [http://localhost:8081/apidocs/index.html?raml=raml/person.raml](http://localhost:8081/apidocs/index.html?raml=raml/person.raml)
+## Usage
 
-
-## Building the Project
-
-Mod-Sample leverages RMB to build the code.
-
-The database connection must be configured in the following file:
+To use this archetype, first build it and install it locally. 
 
 ```
-src/main/resources/postgres-conf.json
+mvn clean install
 ```
 
-The DB schema is defined in  
-```
-src/main/resources/templates/schema.json
-```
-
-Deploying the module in OKAPI should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
+Once you receive a confirmation of the build success, go to the folder where you want to start the new project for your module.
 
 ```
-src/main/resources/create_tenant.sql
-src/main/resources/delete_tenant.sql
+mvn archetype:generate              	\
+  -DarchetypeGroupId=org.folio        \
+  -DarchetypeArtifactId=mod-folio     \
+  -DarchetypeVersion=1.0-SNAPSHOT     \
+  -DgroupId=org.folio                 \
+  -DartifactId={module-name-here}
 ```
 
+Verify the information in the prompts.
+
+Once the new project folder is created, go into the new directory. You will need to place the directory under source control. Then, add the `raml-util` module. 
+
+```
+git init
+git submodule add https://github.com/folio-org/raml ramls/raml-util
+```
+
+`raml-util` exposes traits shared by various RMB-based FOLIO modules.
