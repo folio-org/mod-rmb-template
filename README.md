@@ -52,3 +52,5 @@ git submodule add https://github.com/folio-org/raml ramls/raml-util
 At this point, the new module is ready for compilation.
 
 `mvn clean install`
+
+> NOTE: Once compiled, this new project will not have an actual API implementation. A Java interface file would have been generated in `src/main/java/org/folio/rest/jaxrs/resource` (in this template it would have generated `PersonResource`).
