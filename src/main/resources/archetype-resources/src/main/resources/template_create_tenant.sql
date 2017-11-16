@@ -1,1 +1,0 @@
--- SQL script to create the tenant/schema

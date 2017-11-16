@@ -1,1 +1,0 @@
--- SQL script to delete the tenant/schema
