@@ -6,7 +6,7 @@ This a the terms of the Apache License, Version 2.0. See the file "LICENSE" for 
 
 ## Introduction
 
-This is a Maven archetype used to generate an RMB-based-backend module. Install this locally if you wish to build such a module. 
+This is a Maven archetype used to generate an RMB-based-backend module. Install this locally if you wish to build such a module.
 
 RAML Module Builder (or RMB) is a VertX-based toolkit that allows you to:
 * synthesize API endpoints (via a Java interface) based on a RAML document; and
@@ -17,7 +17,7 @@ For additional information on RMB, please refer to the [README](https://github.c
 
 ## Usage
 
-First, install it locally: 
+First, install it locally:
 
 ```
 mvn clean install
@@ -38,7 +38,7 @@ mvn archetype:generate                      \
 
 `cd` into the new project's directory.
 
-Next, add the new project to source control. Add the `raml-util` module afterwards. 
+Next, add the new project to source control. Add the `raml-util` module afterwards.
 
 ```
 git init
