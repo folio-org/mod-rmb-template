@@ -26,7 +26,7 @@ mvn clean install
 On success, go to the root that will host your new project folder and run the following command:
 
 ```
-mvn archetype:generate              	      \
+mvn archetype:generate                      \
   -DarchetypeGroupId=org.folio              \
   -DarchetypeArtifactId=mod-rmb-template    \
   -DarchetypeVersion=1.0-SNAPSHOT           \
