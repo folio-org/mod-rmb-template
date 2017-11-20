@@ -1,4 +1,4 @@
-# MOD-SAMPLE
+# mod-sample
 
 Copyright (C) 2017 The Open Library Foundation
 
@@ -27,7 +27,7 @@ The DB schema is defined in
 src/main/resources/templates/schema.json
 ```
 
-Deploying the module in OKAPI should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
+Deploying the module in Okapi should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
 
 ```
 src/main/resources/create_tenant.sql
