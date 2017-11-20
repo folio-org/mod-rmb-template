@@ -1,7 +1,7 @@
 {
-  "srvcId" : "sample-module",
-  "nodeId" : "localhost",
-  "descriptor" : {
-    "exec" : "java -jar ../target/sample-module-fat.jar -Dhttp.port=%p"
+  "srvcId": "sample-module",
+  "nodeId": "localhost",
+  "descriptor": {
+    "exec": "java -jar ../target/sample-module-fat.jar -Dhttp.port=%p"
   }
 }

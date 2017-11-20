@@ -22,7 +22,7 @@ The database connection must be configured in the following file:
 src/main/resources/postgres-conf.json
 ```
 
-The DB schema is defined in  
+The DB schema is defined in
 ```
 src/main/resources/templates/schema.json
 ```
