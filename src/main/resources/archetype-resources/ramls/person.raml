@@ -8,13 +8,13 @@ documentation:
     content: <b>CRUD API</b>
 
 schemas:
-  - person: !include schemas/person.json
+  - person.json: !include schemas/person.json
   - personCollection: !include schemas/personCollection.json
 
 traits:
   - secured: !include raml-util/traits/auth.raml
   - orderable: !include raml-util/traits/orderable.raml
-  - pageable:  !include raml-util/traits/pageable.raml
+  - pageable: !include raml-util/traits/pageable.raml
   - searchable: !include raml-util/traits/searchable.raml
   - language: !include raml-util/traits/language.raml
 
@@ -28,7 +28,7 @@ resourceTypes:
       exampleCollection: !include examples/person_collection.sample
       exampleItem: !include examples/person.sample
       schemaCollection: personCollection
-      schemaItem: person
+      schemaItem: person.json
   get:
     description: Get list of people
     is: [
@@ -40,4 +40,4 @@ resourceTypes:
     type:
       collection-item:
         exampleItem: !include examples/person.sample
-        schema: person
+        schema: person.json
