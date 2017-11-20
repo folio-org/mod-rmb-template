@@ -7,7 +7,7 @@
       "id": "personData",
       "items": {
         "type": "object",
-        "$ref": "person"
+        "$ref": "person.json"
       }
     },
     "total_records": {
