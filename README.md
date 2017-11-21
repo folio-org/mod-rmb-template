@@ -34,7 +34,7 @@ mvn archetype:generate                      \
   -DartifactId={project-module-name-here}
 ```
 
-> NOTE: The new project will includes a .gitignore file that include paths which RMB uses to auto-generate code in. Since the Java files generated in these folders are rebuilt every single time, the paths are not under source control.
+> NOTE: The new project will include a .gitignore file that includes paths which RMB uses to auto-generate code in. Since the Java files generated in these folders are rebuilt every single time, the paths are not under source control.
 
 `cd` into the new project's directory.
 

@@ -10,7 +10,7 @@
     <fileSet filtered="true">
       <directory>ramls</directory>
     </fileSet>
-    <fileSet filtered="true">
+    <fileSet filtered="false">
       <directory>descriptors</directory>
     </fileSet>
     <fileSet filtered="true">
