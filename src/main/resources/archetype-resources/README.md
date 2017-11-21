@@ -1,8 +1,8 @@
-# MOD-SAMPLE
+# mod-sample
 
 Copyright (C) 2017 The Open Library Foundation
 
-This software is distributed under the terms of the Apache License, Version 2.0. See the file "LICENSE" for more information.
+This software is distributed under the terms of the Apache License, Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Introduction
 
@@ -22,12 +22,12 @@ The database connection must be configured in the following file:
 src/main/resources/postgres-conf.json
 ```
 
-The DB schema is defined in  
+The DB schema is defined in
 ```
 src/main/resources/templates/schema.json
 ```
 
-Deploying the module in OKAPI should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
+Deploying the module in Okapi should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
 
 ```
 src/main/resources/create_tenant.sql
