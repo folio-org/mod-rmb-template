@@ -1,5 +1,5 @@
 {
-  "id": "sample-module",
+  "id": "${artifactId}-${version}",
   "name": "Sample FOLIO Module",
   "provides": [
     {
