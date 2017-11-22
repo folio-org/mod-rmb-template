@@ -3,7 +3,7 @@
   "name": "Sample FOLIO Module",
   "provides": [
     {
-      "id": "some-feature",
+      "id": "${artifactId}",
       "version": "1.0",
       "handlers": [
         {
