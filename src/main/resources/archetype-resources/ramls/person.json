@@ -5,10 +5,10 @@
     "id": {
       "type": "string"
     },
-    "first_name": {
+    "firstName": {
       "type": "string"
     },
-    "last_name": {
+    "lastName": {
       "type": "string"
     },
     "age": {
@@ -16,7 +16,7 @@
     }
   },
   "required": [
-    "first_name",
-    "last_name"
+    "firstName",
+    "lastName"
   ]
 }
