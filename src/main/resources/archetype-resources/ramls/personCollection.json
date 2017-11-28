@@ -10,19 +10,13 @@
         "$ref": "person.json"
       }
     },
-    "total_records": {
-      "type": "integer"
-    },
-    "first": {
-      "type": "integer"
-    },
-    "last": {
+    "totalRecords": {
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
     "persons",
-    "total_records"
+    "totalRecords"
   ]
 }

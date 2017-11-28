@@ -3,15 +3,12 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": [
-        "integer",
-        "null"
-      ]
-    },
-    "first_name": {
       "type": "string"
     },
-    "last_name": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
       "type": "string"
     },
     "age": {
@@ -19,7 +16,7 @@
     }
   },
   "required": [
-    "first_name",
-    "last_name"
+    "firstName",
+    "lastName"
   ]
 }
