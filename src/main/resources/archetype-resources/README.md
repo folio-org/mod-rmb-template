@@ -22,9 +22,9 @@ The database connection must be configured in the following file:
 src/main/resources/postgres-conf.json
 ```
 
-The DB schema is defined in
+The DB schema is defined in:
 ```
-src/main/resources/templates/schema.json
+src/main/resources/templates/db_scripts/schema.json
 ```
 
 Deploying the module in Okapi should initialize the schema. Nonetheless, for testing purposes, the following files have been included to build the DB schema from scratch:
