@@ -45,7 +45,7 @@ git init
 git submodule add https://github.com/folio-org/raml ramls/raml-util
 ```
 
-[raml-util](https://github.com/folio-org/raml) exposes traits shared by various RMB-based FOLIO modules.
+[raml-util](https://github.com/folio-org/raml) expose traits shared by RMB-based FOLIO modules.
 
 At this point, the new module is ready for initial compilation.
 
