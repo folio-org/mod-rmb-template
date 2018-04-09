@@ -63,5 +63,5 @@ Replace the basic RAML and schema files with ones to suit your project. Follow t
 
 Commence your API implementation.
 
-See other initial setup [notes](http://dev.folio.org/doc/create-new-repo).
+See other initial setup [notes](https://dev.folio.org/guidelines/create-new-repo).
 
