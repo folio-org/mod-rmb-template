@@ -1,11 +1,17 @@
 {
   "tables": [
     {
-      "tableName": "person",
-      "fromModuleVersion": 1.0,
+      "tableName": "pets",
       "withMetadata": true,
-      "generateId": true,
-      "ginIndex": true
+      "pkColumnName": "_id",
+      "generateId": false,
+      "withAuditing": false,
+      "uniqueIndex": [
+        {
+          "fieldName": "genus",
+          "tOps": "ADD"
+        }
+      ]
     }
   ]
 }
