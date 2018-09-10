@@ -9,15 +9,20 @@ See the file "[LICENSE](LICENSE)" for more information.
 
 This is a Maven archetype used to generate an RMB-based server-side module. Install this locally if you wish to build such a module.
 
-RAML Module Builder (or RMB) is a VertX-based toolkit that allows you to:
-* synthesize API endpoints (via a Java interface) based on a RAML document; and
-* synthesize POJOs based on declared JSON schema definitions.
+RAML Module Builder (or RMB) is a Vert.x based toolkit that enables a module to:
+* synthesize API endpoints (via a Java interface) based on a RAML document
+* synthesize POJOs based on declared JSON schema definitions
+* take advantage of other abstraction
 
 For additional information on RMB, please refer to the [README](https://github.com/folio-org/raml-module-builder).
 
+See other initial module setup [guidelines](https://dev.folio.org/guidelines/create-new-repo)
+and [naming conventions](https://dev.folio.org/guidelines/naming-conventions/),
+and the guide [Commence a module - structure and configuration](https://dev.folio.org/guides/commence-a-module/).
+
 ## Usage
 
-First, install it locally:
+First, build and install this mod-rmb-template facility locally:
 
 ```
 mvn clean install
@@ -42,8 +47,8 @@ Do `cd` into the new project's directory.
 git init
 ```
 
-Add the [raml-util](https://github.com/folio-org/raml) which provides resources shared by RMB-based FOLIO modules.
-And use its "raml1.0" branch:
+Add the [raml-util](https://github.com/folio-org/raml) which provides resources shared by RAML-based FOLIO modules.
+**NOTE**: 20180910: use its "raml1.0" branch:
 
 ```
 git submodule add https://github.com/folio-org/raml ramls/raml-util
@@ -72,8 +77,4 @@ Commence your API implementation:
 src/main/java/org/folio/rest/impl/PetsResourceImpl.java
 src/test/java/org/folio/rest/impl/PetsTest.java
 ```
-
-See other initial setup [guidelines](https://dev.folio.org/guidelines/create-new-repo)
-and [naming conventions](https://dev.folio.org/guidelines/naming-conventions/),
-and the guide [Commence a module - structure and configuration](https://dev.folio.org/guides/commence-a-module/).
 
