@@ -15,7 +15,9 @@
 
   <properties>
     <raml-module-builder.version>21.0.1</raml-module-builder.version>
-    <vertx.version>3.5.1</vertx.version>
+    <vertx.version>3.5.3</vertx.version>
+    <junit.version>4.12</junit.version>
+    <rest-assured.version>3.1.1</rest-assured.version>
     <ramlfiles_path>${basedir}/ramls</ramlfiles_path>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -45,22 +47,14 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.jayway.restassured</groupId>
-      <artifactId>rest-assured-common</artifactId>
-      <version>2.8.0</version>
-      <scope>test</scope>
-      <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>com.jayway.restassured</groupId>
+      <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
-      <version>2.8.0</version>
+      <version>${rest-assured.version}</version>
       <scope>test</scope>
-      <type>jar</type>
     </dependency>
   </dependencies>
 
