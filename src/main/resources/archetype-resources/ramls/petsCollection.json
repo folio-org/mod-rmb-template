@@ -1,22 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "description": "Collection of pets",
   "properties": {
-    "persons": {
+    "pets": {
       "type": "array",
-      "id": "personData",
       "items": {
         "type": "object",
-        "$ref": "person.json"
+        "$ref": "pet.json"
       }
     },
     "totalRecords": {
       "type": "integer"
     }
   },
-  "additionalProperties": false,
   "required": [
-    "persons",
+    "pets",
     "totalRecords"
   ]
 }
