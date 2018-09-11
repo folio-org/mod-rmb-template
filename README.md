@@ -37,7 +37,7 @@ mvn archetype:generate \
   -DarchetypeArtifactId=mod-rmb-template \
   -DarchetypeVersion=1.1.0-SNAPSHOT \
   -DgroupId=org.folio \
-  -Dversion=1.0.1-SNAPSHOT \
+  -Dversion=0.0.1-SNAPSHOT \
   -DartifactId={project-module-name-here}
 ```
 
