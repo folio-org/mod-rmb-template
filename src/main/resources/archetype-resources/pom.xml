@@ -14,7 +14,7 @@
   </licenses>
 
   <properties>
-    <raml-module-builder.version>21.0.1</raml-module-builder.version>
+    <raml-module-builder.version>22.1.0</raml-module-builder.version>
     <vertx.version>3.5.3</vertx.version>
     <junit.version>4.12</junit.version>
     <rest-assured.version>3.1.1</rest-assured.version>
@@ -249,6 +249,29 @@
                   <destinationFile>${project.build.directory}/DeploymentDescriptor.json</destinationFile>
                 </fileSet>
               </fileSets>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <!-- Replace the baseUri in the RAMLs that have been copied to
+            apidocs directory so that they can be used via the local html api console. -->
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <replaceregexp match="baseUri:.+$" replace="baseUri: http://localhost:{http.port}" byline="true">
+                  <fileset dir="${basedir}/target/classes/apidocs/raml" includes="**/*.raml"/>
+                </replaceregexp>
+              </target>
             </configuration>
           </execution>
         </executions>
