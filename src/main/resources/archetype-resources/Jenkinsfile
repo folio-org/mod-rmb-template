@@ -1,14 +1,18 @@
 buildMvn {
-  publishModDescriptor = 'no'
-  runLintRamlCop = 'no'
-  publishAPI = 'no'
-  mvnDeploy = 'no'
+  publishModDescriptor = false
+  mvnDeploy = false
+  buildNode = 'jenkins-agent-java11'
+
+  doApiLint = true
+  doApiDoc = true
+  apiTypes = 'RAML'
+  apiDirectories = 'ramls'
 
   doDocker = {
     buildJavaDocker {
-      publishMaster = 'no'
-      healthChk = 'yes'
-      healthChkCmd = 'curl -sS --fail -o /dev/null  http://localhost:8081/apidocs/ || exit 1'
+      publishMaster = false
+      healthChk = true
+      healthChkCmd = 'wget --no-verbose --tries=1 --spider http://localhost:8081/admin/health || exit 1'
     }
   }
 }
