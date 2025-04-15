@@ -5,6 +5,13 @@ Copyright (C) 2017-2022 The Open Library Foundation
 This software is distributed under the terms of the Apache License, Version 2.0.
 See the file "[LICENSE](LICENSE)" for more information.
 
+## DEPRECATED
+
+[FOLIO's Officially Supported Technologies](https://folio-org.atlassian.net/wiki/spaces/TC/pages/5053681/Officially+Supported+Technologies)
+have deprecated RAML Module Builder (RMB).  Only existing modules may continue to use RMB.
+
+Use Spring Way instead, see https://github.com/folio-org/mod-spring-template for a template, or add new functionality to existing modules.
+
 ## Introduction
 
 This is a Maven archetype used to generate an RMB-based server-side module. Install this locally if you wish to build such a module.
